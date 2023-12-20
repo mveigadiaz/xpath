@@ -1,65 +1,65 @@
-agenda.xml
+#agenda.xml
 
-1. Nombre del propietario de la agenda.
+#1. Nombre del propietario de la agenda.
 
 	//propietario/identificadores/nombre
 
-2. Teléfono de casa del propietario.
+#2. Teléfono de casa del propietario.
 
 	//propietario/telefonos/casa
 
-3. Nombres y apellidos de los contactos de la agenda.
+#3. Nombres y apellidos de los contactos de la agenda.
 
 	/agenda/contactos/persona/identificadores
 
-4. Nombre e identificador de cada contacto.
+#4. Nombre e identificador de cada contacto.
 
 	/agenda/contactos/persona[@id='p01']/identificadores
 	/agenda/contactos/persona[@id='p02']/identificadores
 	/agenda/contactos/persona[@id='p03']/identificadores
 
-5. Datos del contacto con identificador p02.
+#5. Datos del contacto con identificador p02.
 
 	/agenda/contactos/persona[@id='p01']
 
-6. Identificadores de los contactos que tienen móvil.
+#6. Identificadores de los contactos que tienen móvil.
 
 	/agenda/contactos/persona/telefonos/movil/../../identificadores
 
-ciclos_2.xml
+#ciclos_2.xml
 
-1. Nombre del instituto.
+#1. Nombre del instituto.
 
 	/ies/nombre/text()
 
-2. Página web del instituto.
+#2. Página web del instituto.
 
 	/ies/web/text()
 
-3. Nombre de los ciclos formativos.
+#3. Nombre de los ciclos formativos.
 
 	/ies/ciclos/ciclo/nombre/text()
 
-4. Siglas por las que se conocen los ciclos formativos.
+#4. Siglas por las que se conocen los ciclos formativos.
 
 	/ies/ciclos/ciclo/@id
 
-5. Años en los que se publicaron los decretos de título de los ciclos formativos.
+#5. Años en los que se publicaron los decretos de título de los ciclos formativos.
 
 	/ies/ciclos/ciclo/decretoTitulo/@año
 
-6. Ciclos formativos de Grado Medio (se trata de obtener el elemento completo).
+#6. Ciclos formativos de Grado Medio (se trata de obtener el elemento completo).
 
 	/ies/ciclos/ciclo[grado='Medio']
 
-7. Nombre de los ciclos formativos de Grado Superior.
+#7. Nombre de los ciclos formativos de Grado Superior.
 
 	/ies/ciclos/ciclo[grado='Superior']/nombre
 
-8. Nombre de los ciclos formativos anteriores a 2010.
+#8. Nombre de los ciclos formativos anteriores a 2010.
 
 	/ies/ciclos/ciclo/decretoTitulo[@año<2010]/../nombre
 
-9. Nombre de los ciclos formativos de 2008 o 2010.
+#9. Nombre de los ciclos formativos de 2008 o 2010.
 
 	/ies/ciclos/ciclo/decretoTitulo[@año='2008' or @año='2010']/../nombre
